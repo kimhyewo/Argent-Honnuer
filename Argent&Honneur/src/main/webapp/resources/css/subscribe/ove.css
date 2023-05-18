@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.ove::-webkit-scrollbar {
+	opacity: 0;
+	height: 8px;
+}
+
+.ove::-webkit-scrollbar-track:hover {
+	background-color: #f2f2f277;
+}
+
+.ove::-webkit-scrollbar-thumb:hover {
+	border-radius: 5px;
+	border: 2px solid #f2f2f277;
+	background-color: #aaa;
+}
+.review-btn{
+	margin: 0 auto;
+	text-align: center;
+}
+div.review-btn > button {
+	width:50px;
+	height:50px;
+    background-color: #ffa5307a;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border: none;
+    background-color: #ffa53000;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 300;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin : 5px;
+}
+
+div > button:hover {
+    background-color: #ffffff6b;
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}

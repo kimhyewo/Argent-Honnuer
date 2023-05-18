@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+@media (min-width : 480px) {
+	.header .title h1{
+		font-size:36px;
+		transition: 1s;
+	}
+	.header .title p{
+		font-size:14px;
+		transition: 1s;
+	}
+}
+
+@media (min-width : 1024px) {
+	.header .title h1{
+		font-size:42px;
+		transition: 1s;
+	}
+	.header .title p{
+		font-size:16px;
+		transition: 1s;
+	}
+}
+
+@media (min-width : 1280px) {
+	.header .title h1{
+		font-size:48px;
+	  	transition: 1s;
+	}
+	.header .title p{
+		font-size:18px;
+		transition: 1s;
+	}
+}
