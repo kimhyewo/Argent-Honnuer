@@ -1,0 +1,50 @@
+h1 {
+    color: #333333;
+  }
+  
+p.description {
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  
+
+  .benefits {
+  	width:300px;
+    list-style-type: none;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    position: relative;
+    color: #333;
+    justify-content: center;
+  
+  }
+  .benefits > span{
+   	border-bottom: solid 1px #cdcdcf;
+  }
+  .good{
+  	margin: 0 auto;
+  	text-align : center;
+  }
+  figure > div{
+	display:inline-block;
+  	list-style:none;
+  	width:300px;
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	padding: 0 30px;
+  }
+  figcaption{
+  	font-style:italic;
+  	font-size: 18px;
+  	font-weight: 600;
+ 	margin-top: 10px;
+  }
+  figure > div > img{
+  	align-items:center;
+  	width:250px;
+  	border-radius: 100%;
+  }
+  .text, .container > h2 {
+	margin-bottom: 50px;
+}
