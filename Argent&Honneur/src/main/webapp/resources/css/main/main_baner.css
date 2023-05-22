@@ -1,6 +1,6 @@
 
 .header {
-    background-image: url(/resources/image/mainImage1.jpg);
+    background-image: url(/resources/image/banner/blur-banner2.png);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -17,7 +17,7 @@
 }
 .header .title h1 {
     font-size: 48px;
-    color: #333;
+    color: #dadada;
     letter-spacing: 0.05em;
     margin-bottom: 0;
 }
@@ -26,7 +26,7 @@
     margin-bottom: 30px;
     font-size:18px;
     font-weight:600;
-    color: #333;
+    color: #dadada;
 }
     /* .header .title button {
         border: 1px solid #ccc;

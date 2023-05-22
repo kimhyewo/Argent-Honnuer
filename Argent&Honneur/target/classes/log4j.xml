@@ -32,6 +32,14 @@
 		<level value="info" />
 	</logger>
 
+	<logger name="com.zaxxer.hikari">
+		<level value="info"></level>		
+	</logger>
+	
+	<logger name="org.mariadb.jdbc">
+		<leve value="debug"></leve>
+	</logger>
+
 	<!-- Root Logger -->
 	<root>
 		<priority value="warn" />

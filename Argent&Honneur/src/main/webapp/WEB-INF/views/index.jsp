@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="ko">
     <head>
@@ -32,8 +33,9 @@
                         <div>
                             <li>
                                 <a href="../" class="no-hover">
-                                    <img src="/resources/image/logo2.png" alt="" width="30px"></li>
-                                </a>
+                                    <img src="/resources/image/logo.png" alt="" width="60px">
+                                </a>   
+                            </li>          
                         </div>
                         <div class="color">
                             <ul>
@@ -73,12 +75,17 @@
                             </ul>
                           </div>
                           
-                        <div>
-                            <li class="log">
-                                <a href="/login/loginPage" id="sign">로그인</a>
-                                <a href="/login/signup">회원가입</a>
-                            </li>
-                        </div>
+                       <c:if test="${sessionScope.user.name == null}">
+						<div>
+							<li class="log"><a href="/login/loginPage" id="sign">로그인</a>
+								<a href="/login/signup">회원가입</a></li>
+						</div>
+					</c:if>
+					<c:if test="${sessionScope.user.name != null}">
+						<div>
+							<li class="log"><a href="/login/logout" id="sign" class="log_out">로그아웃</a></li>
+						</div>
+					</c:if>
                     </ul>
                 </nav>
             </div>

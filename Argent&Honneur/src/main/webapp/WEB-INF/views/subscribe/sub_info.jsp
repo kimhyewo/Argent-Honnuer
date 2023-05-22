@@ -28,10 +28,11 @@
                 <nav class="bg-color">                
                     <ul class="ul-lh">
                         <div>
-                            <li>
-                                <a href="../" class="no-hover">
-                                    <img src="/resources/image/logo2.png" alt="" width="30px"></li>
-                                </a>
+							<li>
+								<a href="../" class="no-hover">
+									<img src="/resources/image/logo.png" alt="" width="60px">
+								</a>
+							</li>
                         </div>
                         <div class="color">
                             <ul>
