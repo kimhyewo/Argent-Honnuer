@@ -1,4 +1,4 @@
-package kr.ac.kopo.interseptor;
+package kr.ac.kopo.interceptor;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -9,7 +9,7 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import kr.ac.kopo.model.User;
 
 
-public class UserInterseptor extends HandlerInterceptorAdapter {		
+public class UserInterceptor extends HandlerInterceptorAdapter {		
 	
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) 

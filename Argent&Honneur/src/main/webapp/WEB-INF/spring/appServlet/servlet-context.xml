@@ -25,4 +25,44 @@
 	
 	
 	
+	<interceptors>
+	
+		<interceptor>
+			<mapping path="/admin/**"/>
+			
+			<beans:bean class="kr.ac.kopo.interceptor.AdminInterceptor"> </beans:bean>
+		</interceptor>
+	
+		<interceptor>
+			<!-- 인터셉터가 적용될 주소  -->
+			<mapping path="/subscribe/subscribing/*"/>
+		
+			<!-- 로그인 없이도 접근 가능한 URI  -->
+			<!-- 구독하기 -->
+			<exclude-mapping path="/subscribe/event"/>
+			<exclude-mapping path="/subscribe/subscribing"/>
+			<exclude-mapping path="/subscribe/sub_info"/>
+			
+			<!-- 제품소개 -->
+			<exclude-mapping path="/product/newProduct"/>
+			<exclude-mapping path="/product/bestProduct"/>
+			<exclude-mapping path="/product/process"/>
+			
+			<!-- 게시판 -->
+			<exclude-mapping path="/product/newProduct"/>
+			<exclude-mapping path="/product/bestProduct"/>
+			<exclude-mapping path="/product/process"/>
+			
+			<!-- 문의하기 -->
+			<exclude-mapping path="/product/newProduct"/>
+			<exclude-mapping path="/product/bestProduct"/>
+			<exclude-mapping path="/product/process"/>
+			<exclude-mapping path="/product/process"/>
+		
+			<!-- 위 주소를 담당하는 인터셉터  -->
+			<beans:bean class="kr.ac.kopo.interceptor.UserInterceptor"> </beans:bean>
+		</interceptor>
+		
+	</interceptors>
+	
 </beans:beans>

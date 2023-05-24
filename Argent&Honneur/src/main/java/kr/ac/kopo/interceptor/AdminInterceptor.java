@@ -1,4 +1,4 @@
-package kr.ac.kopo.interseptor;
+package kr.ac.kopo.interceptor;
 
 import java.lang.reflect.Method;
 
