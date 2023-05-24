@@ -15,6 +15,8 @@ public class User {
 	
 	private String phone;
 	
+	private int group;
+	
 	public String getUserid() {
 		return userid;
 	}
@@ -62,5 +64,15 @@ public class User {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
+	
 
+	public int getGroup() {
+		return group;
+	}
+
+	public void setGroup(int group) {
+		this.group = group;
+	}
+
+	
 }

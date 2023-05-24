@@ -161,34 +161,34 @@
                            <caption>구독 요금표</caption>
                            <thead>
                               <tr>
-                               <th>요금\기간</th>
-                                    <th>구독 기간1</th>
-                                    <th>구독 기간2</th>
-                                    <th>구독 기간3</th>
-                                    <th>구독 기간4</th>
+                               <th>플랜\내용</th>
+                                    <th>원하는 악세서리 1개</th>
+                                    <th>원하는 악세서리 2개</th>
+                                    <th>원하는 악세서리 3개</th>
+                                    <th> - </th>
                               </tr>
                            </thead>
                            <tbody>
                               <tr>
-                              		<th>35,000원</th>
-                                     <td>요금1</td>
-                                     <td>요금2</td>
-                                     <td>요금3</td>
-                                     <td>요금4</td>
+                              		<th>기본 플랜</th>
+                                     <td>35,000원</td>
+                                     <td> X </td>
+                                     <td> X </td>
+                                     <td> X </td>
                               </tr>
                                <tr>
-                                   <th>66,000원</th>
-                                     <td>요금5</td>
-                                     <td>요금6</td>
-                                     <td>요금7</td>
-                                     <td>요금8</td>
+                                   <th>프리미엄 플랜</th>
+                                     <td> X </td>
+                                     <td>66,000원</td>
+                                     <td> X </td>
+                                     <td> X </td>
                                </tr>
                                <tr>
-                                   <th>99,000원</th>
-                                     <td>요금5</td>
-                                     <td>요금6</td>
-                                     <td>요금7</td>
-                                     <td>요금8</td>
+                                   <th>럭셔리 플랜</th>
+                                     <td> X </td>
+                                     <td> X </td>
+                                     <td>99,000원</td>
+                                     <td> X </td>
                                </tr>
                            </tbody>
                         </table>
@@ -197,10 +197,10 @@
                      <div class="sub_info_link">
                      <h3>사이트 이용 약관 및 규약 바로가기</h3>
            
-                     <label><a href="../TermsPolicy">Argent&amp;Honneur 사용자 이용 약관</a></label>
-                     <label><a href="../LocationInfoTermsPolicy.html">Argent&amp;Honneur 사용자 위치 정보 이용 약관</a></label>
-                      <label><a href="../FinanceTermsPolicy">전자금융거래약관</a></label>
-                     <label><a href="#">개인정보보호처리방침</a></label>
+                     <label><a href="../resources/html/TermsPolicy.html">Argent&amp;Honneur 사용자 이용 약관</a></label>
+                     <label><a href="../resources/html/LocationInfoTermsPolicy.html">Argent&amp;Honneur 사용자 위치 정보 이용 약관</a></label>
+                      <label><a href="../resources/html/FinanceTermsPolicy.html">전자금융거래약관</a></label>
+                     <label><a href="../resources/html/IndividualInfoPolicy.html">개인정보보호처리방침</a></label>
                      
                   </div>
                </div>
