@@ -46,7 +46,7 @@ public class AdminInterceptor extends HandlerInterceptorAdapter {
 			return UserInterceptor();
 		}
 		
-		else if(session != null) {
+		else if(session != null) { // else if로 세션이 널값이 아닐때를 지정해서 케이스를 열었더니 NullPointerException 해결됨.
 			
 		User admin =  (User) session.getAttribute("group");
 		
