@@ -9,7 +9,7 @@
 	
 	<insert id="signup">
 		INSERT INTO user
-		VALUES (#{userid}, UPPER(SHA1(UNHEX(SHA1(#{userpwd})))), #{name}, #{gender}, #{age}, #{phone})
+		VALUES (#{userid}, UPPER(SHA1(UNHEX(SHA1(#{userpwd})))), #{name}, #{gender}, #{age}, #{phone}, #{group})
 	</insert>
 	
 	<select id="checheckuser_id" resultType="Integer">

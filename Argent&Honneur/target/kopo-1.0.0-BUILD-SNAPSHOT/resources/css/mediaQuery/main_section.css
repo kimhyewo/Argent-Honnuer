@@ -1,0 +1,128 @@
+@media ( min-width : 480px) {
+	section {
+		width: 100%;
+	}
+	div.Product figure>img {
+		border-radius: 5px;
+		width: 200px;
+		transition: 1s;
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 2px 5px
+			rgba(0, 0, 0, 0.1);
+	}
+	div.main {
+		width: 768px;
+		transition: 1s;
+	}
+	li>figure>figcaption {
+		font-size: 0.8em;
+		text-align: center;
+	}
+	div.report>img {
+		width: 500px;
+		transition: 1s;
+	}
+	div.report>h1 {
+		font-size: 1.4em;
+		margin: 30px 0px;
+	}
+	div.report>p {
+		width: 450px;
+		font-size: 0.9em;
+		font-weight: 200;
+	}
+	.header {
+		height: 300px;
+	}
+	div.more>h1 {
+		font-size: 1.3em;
+		font-weight: 300;
+		transition: 1s;
+	}
+
+}
+
+@media ( min-width : 1024px) {
+	section {
+		width: 100%;
+	}
+	div.Product figure>img {
+		border-radius: 5px;
+		width: 250px;
+		transition: 1s;
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 2px 5px
+			rgba(0, 0, 0, 0.1);
+	}
+	div.main {
+		width: 1024px;
+		transition: 1s;
+	}
+	li>figure>figcaption {
+		font-size: 0.9em;
+		text-align: center;
+	}
+	div.report>img {
+		transition: 1s;
+		width: 600px;
+	}
+	div.report>h1 {
+		font-size: 1.5em;
+		margin: 30px 0px;
+	}
+	div.report>p {
+		width: 450px;
+		font-size: 1em;
+		font-weight: 200;
+	}
+	.header {
+		height: 500px;
+	}
+	div.more>h1 {
+		font-size: 1.6em;
+		font-weight: 300;
+		transition: 1s;
+	}
+
+}
+
+@media ( min-width : 1280px) {
+	section {
+		width: 100%;
+	}
+	div.main {
+		width: 1280px;
+		transition: 1s;
+	}
+	div.Product figure>img {
+		border-radius: 5px;
+		width: 300px;
+		transition: 1s;
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 2px 5px
+			rgba(0, 0, 0, 0.1);
+	}
+	li>figure>figcaption {
+		font-size: 1em;
+		text-align: center;
+	}
+	div.report>img {
+		transition: 1s;
+		width: 700px;
+	}
+	div.report>h1 {
+		font-size: 1.6em;
+		margin: 30px 0px;
+	}
+	div.report>p {
+		width: 450px;
+		font-size: 1.1em;
+		font-weight: 200;
+	}
+	.header {
+		height: 600px;
+	}
+	div.more>h1 {
+		font-size: 1.8em;
+		font-weight: 300;
+		transition: 1s;
+	}
+
+}

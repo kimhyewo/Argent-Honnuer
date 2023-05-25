@@ -1,0 +1,85 @@
+.header {
+	background-image: url(/resources/image/subscribe/sub-info/sub-info.jpg);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.9;
+	z-index: 1;
+	width: 100%;
+	transition: 1s;
+	height: 400px;
+	background-size: 100% 600px;
+}
+
+.sub_info {
+	text-align: center;
+	font-family: 'Noto Sans KR', 'sans-serif';
+}
+
+.sub_info div:first-child {
+	
+}
+
+.sub_info div:nth-child(2) {
+	font-size: large;
+	margin-top: 35px;
+}
+
+.sub_info .intro_text div>p:first-child {
+	font-size: larger;
+}
+
+.sub_info div {
+	margin-top: 75px;
+}
+
+.sub_info div>p {
+	margin-top: 50px;
+}
+
+.introduce table {
+	margin-top: 25px;
+	padding: 5px;
+}
+
+.introduce td {
+	padding: 15px;
+	border: 2px solid black;
+}
+
+.sub_fee_table {
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+.sub_fee_table caption {
+	font-size: 250%;
+}
+
+.sub_fee_table>table {
+	table-layout: fixed;
+	border: 3px solid black;
+}
+
+.sub_fee_table table td {
+	
+}
+
+.sub_fee_table table th, .sub_fee_table table td {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	/* border: 10px; 
+            /* cellpadding:100px; */
+	border: 1px solid black;
+	padding: 50px;
+	width: 80px;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.sub_info_link {
+	display: inline-grid;
+}

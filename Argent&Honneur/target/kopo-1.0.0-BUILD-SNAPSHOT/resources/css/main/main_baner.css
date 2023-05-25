@@ -1,0 +1,59 @@
+
+.header {
+    background-image: url(/resources/image/banner/blur-banner2.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    z-index: 1;
+    width: 100%;
+  	transition: 1s;
+    background-size:100% 600px;
+}
+.header .title {
+    text-align: center;
+}
+.header .title h1 {
+    font-size: 48px;
+    color: #dadada;
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+}
+.header .title p {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size:18px;
+    font-weight:600;
+    color: #dadada;
+}
+    /* .header .title button {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #ffa530;
+        padding: 10px 50px;
+        font-size: 14px;
+        transition: .5s ease;
+        cursor: pointer;
+    } */
+    .header .title button {
+        background-color: #ffa530;
+        color: #000;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 30px;
+        font-size: 18px;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        font-weight: 800;
+      }
+      
+      .header .title button:hover {
+        background-color: #ffa530b0;
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      

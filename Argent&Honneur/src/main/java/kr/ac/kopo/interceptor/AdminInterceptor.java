@@ -14,12 +14,10 @@ import kr.ac.kopo.model.User;
 
 public class AdminInterceptor extends HandlerInterceptorAdapter {
 
-	/*
-	 * private boolean UserInterceptor() {
-	 * 
-	 * 
-	 * return true; }
-	 */
+	public boolean UserInterceptor() {
+		return UserInterceptor(); 
+	}
+	 
 	 
 
 	@Override
@@ -34,35 +32,61 @@ public class AdminInterceptor extends HandlerInterceptorAdapter {
 		System.out.println("Method: " + method);
 		
 		/* 이런 식으로 콘솔에 출력.
-		 * Bean: com.gngsn.app.controller.Home@23af30c9 Method: public java.lang.String
-		 * com.gngsn.app.controller.Home.getHomePage(java.lang.Long,java.lang.Long,org.springframework.ui.Model)
+		 * Bean: com.gngsn.app.controller.Home@23af30c9 
+		 * Method: public java.lang.String com.gngsn.app.controller.Home.getHomePage(java.lang.Long,java.lang.Long,org.springframework.ui.Model)
 		 */
+		
 		
 		
 		HttpSession session = request.getSession();
 		
-		User admin = (User) session.getAttribute("group");
-		if(admin.getGroup() == 1) {
-			System.out.println("AdminInterceptor : 관리자 입니다. ");
-			return true;
+		
+		
+		if(session == null) {
+			return UserInterceptor();
 		}
 		
-		else if(admin.getGroup() == 0) 
-			System.out.println("AdminInterceptor : 관리자가 아닙니다.");
-			// session.setAttribute("", user);
+		else if(session != null) {
 			
-			
-			
-			response.sendError(403, "관리자 기능에 접근할수 있는 권한이 없습니다. 엔지니어에게 문의하세요. ");
-			// request.getAuthType();
-			response.sendRedirect("");
-			
-			return false;
+		User admin =  (User) session.getAttribute("group");
 		
+			if(admin != null) {
+				try {
+						
+						 if( (int) admin.getGroup() == (int) 1 ) {
+							System.out.println("AdminInterceptor : 관리자 입니다. ");
+							
+							response.sendRedirect("/admin");
+							return true;
+						}
+						
+						else if( (int) ((User) admin).getGroup() == (int) 0 ) 
+							System.out.println("AdminInterceptor : 관리자가 아닙니다.");
+							//session.setAttribute("", user);
+							
+							
+							
+							response.sendError(403, "관리자 기능에 접근할수 있는 권한이 없습니다. 엔지니어에게 문의하세요. ");
+							//request.getAuthType();
+							response.sendRedirect("/index");
+							
+							
+							
+						
+						
+						/* return UserInterseptor(); */
+					} catch(Exception e) {
+						e.printStackTrace();
+					}
+				
+				}
+			
+			}
 		
+		return false;
+		}
 		
-		/* return UserInterseptor(); */
-	}
+	
 
 
 }
