@@ -17,20 +17,35 @@ div.more{
 }
 
 div.mbtn > a > button{
+    background-color: #000;
+    color:#fff;
+    font-weight: 300;
+    font-size: 14px;
 	margin-top: 10px;
     width: 100px;
     height: 40px;
-    border: none;
-    border-radius: 6px;
-    background-color: #FCFCFC;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2),
-                -3px -3px 15px rgba(255, 255, 255, 0.3);
-    font-weight: 300;
-    font-size:1em;
-    transition: all 0.2s ease-in-out;
+    border:none;
+    cursor: pointer;
+    transition: 0.1s;
 }
-div.mbtn > a > button:hover {
-    transform: translateY(2px);
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3),
-                -3px -3px 10px rgba(255, 255, 255, 0.5);
-  }
+.mbtn > a{
+	display: inline-block;
+}
+#sub > a > button {
+		margin-top:30px;
+        background-color: #000;
+    	color:#fff;
+        border: none;
+        font-weight: 800;
+        width: 400px;
+        height: 50px;
+        font-size: 18px;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+      }
+      
+#sub > a > button:hover {
+        background-color: #ffa530;
+        color: #000;
+      }

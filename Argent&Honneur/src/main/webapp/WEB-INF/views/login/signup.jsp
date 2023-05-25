@@ -14,7 +14,6 @@
 <link rel="stylesheet" href="/resources/css/main/main_baner.css">
 <link rel="stylesheet" href="/resources/css/mediaQuery/mediaQuery.css">
 <link rel="stylesheet" href="/resources/css/login/signup.css">
-<link rel="stylesheet" href="/resources/css/all/bg-color.css">
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 <link rel="stylesheet" href="/resources/css/all/scrollbar.css">
@@ -30,11 +29,9 @@
 			<nav class="bg-color">
 				<ul class="ul-lh">
 					<div>
-						<li>
-							<a href="../" class="no-hover">
-								<img src="/resources/image/logo.png" alt="" width="60px">
-							</a>
-						</li>
+						<li><a href="../" class="no-hover"> <img
+								src="/resources/image/logo.png" alt="" width="60px">
+						</a></li>
 					</div>
 					<div class="color">
 						<ul>
@@ -57,18 +54,16 @@
 							<li class="category">
 								<p>게시판</p>
 								<ul class="cate">
-									<li><a href="#">공지사항</a></li>
-									<li><a href="#">자유게시판</a></li>
-									<li><a href="#">리뷰</a></li>
+									<li><a href="/notice/notification">공지사항</a></li>
+									<li><a href="/notice/board">자유게시판</a></li>
+									<li><a href="/notice/review">리뷰</a></li>
 								</ul>
 							</li>
 							<li class="category">
 								<p>문의하기</p>
 								<ul class="cate">
-									<li><a href="#">Q & A</a></li>
-									<li><a href="#">자주찾는질문</a></li>
-									<li><a href="#">1대1 상담</a></li>
-									<li><a href="#">온라인상담</a></li>
+									<li><a href="/etc/FAQ">FAQ</a></li>
+									<li><a href="/etc/1vs1">1대1 상담</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -91,19 +86,19 @@
 						</div>
 						<div>
 							<label for="i1">User ID</label> <input type="text" id="i1"
-								class="mg-t" name="userid" placeholder="  아이디를 입력하세요." required>
+								class="mg-t" name="userid" placeholder="아이디를 입력하세요." required>
 							<label><a href="javascript:checkuserId(false)">중복검사</a></label>
 						</div>
 						<div>
 							<label for="i2">User Password</label> <i class="bi bi-eye spb"></i>
 							<input type="password" id="i2" class="mg-t" id="password-input"
-								name="userpwd" placeholder="  영문자+숫자+특수문자 조합으로 8~25자리" required>
+								name="userpwd" placeholder="영문자+숫자+특수문자 조합으로 8~25자리" required>
 						</div>
 						<div>
 							<label for="i3">Confirm Password</label> <i
 								class="bi bi-eye spb2"></i> <input type="password" id="i3"
 								class="mg-t" id="confirm-password-input" name="passwdCheck"
-								placeholder="  비밀번호를 재입력하세요." required>
+								placeholder="비밀번호를 재입력하세요." required>
 						</div>
 						<div>
 							<label for="i4">Name</label> <input type="text" id="i4"

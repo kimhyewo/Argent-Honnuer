@@ -3,10 +3,6 @@ i.spb{
     cursor: pointer;
 }
 
-.margin{
-    overflow: auto;
-}
-
 input.radio{
     width: 15px;
 }
@@ -21,7 +17,19 @@ input.radio{
     align-items: left;
 }
 .margin{
-    height: 400px;
+	margin-bottom:100px;
+}
+div > label > a{
+	font-size: 16px;
+	float:right;
+	font-weight: 400;
+	margin-top: 15px;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #000;
+	text-align: center;
+	color: #fff;
 }
 .margin::-webkit-scrollbar {
     width: 10px;

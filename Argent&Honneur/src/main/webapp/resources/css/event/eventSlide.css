@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.imageSize {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.fade > figcaption{
+	font-size: 12px;
+	margin-top: -35px;
+}
