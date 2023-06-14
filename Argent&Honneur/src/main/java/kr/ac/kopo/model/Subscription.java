@@ -9,6 +9,9 @@ public class Subscription {
 	private BigDecimal amount;
 	private LocalDate startDate;
 	private LocalDate endDate;
+	private String cardNumber;
+	private String expiryDate;
+	private int cvv;
 
 	public String getId() {
 		return id;
@@ -48,5 +51,29 @@ public class Subscription {
 
 	public void setEndDate(LocalDate endDate) {
 		this.endDate = endDate;
+	}
+
+	public String getCardNumber() {
+		return cardNumber;
+	}
+
+	public String getExpiryDate() {
+		return expiryDate;
+	}
+
+	public int getCvv() {
+		return cvv;
+	}
+
+	public void setCardNumber(String cardNumber) {
+		this.cardNumber = cardNumber;
+	}
+
+	public void setExpiryDate(String expiryDate) {
+		this.expiryDate = expiryDate;
+	}
+
+	public void setCvv(int cvv) {
+		this.cvv = cvv;
 	}
 }

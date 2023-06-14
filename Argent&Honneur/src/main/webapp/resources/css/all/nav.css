@@ -1,0 +1,120 @@
+body{
+	overflow-x:hidden;
+}
+div.color > ul{
+	margin-top: -7px;
+}
+
+li.category p {
+	display: inline-block;
+}
+.show {
+	opacity: 1;
+	background-color: #000000;	
+	width:20000px;
+	z-index: 999;
+	position: absolute;
+	left:50%;
+	transform: translate(-50%, 0);
+	top: 64px;
+}
+.cate {
+	overflow: hidden;
+	height:0;
+	opacity:0;
+}
+
+.in > div > li > a{
+	color:#fff;
+}
+
+.cate>.in {
+	display: flex;
+	width: 200px;
+}
+
+@keyframes fade-in{
+	from{
+		opacity : 0;
+		height:0;
+	}
+	to {
+		opacity : 1;
+		height:150px;
+	}
+}
+@keyframes fade-out{
+	from{
+		opacity : 1;
+		height:150px;
+	}
+	to{
+		opacity : 0;
+		height:0;
+	}
+}
+.open{
+	animation-name: fade-in;
+	animation-duration: 0.5s;
+  	animation-fill-mode: both;
+}
+.close{
+	animation-name: fade-out;
+	animation-duration: 0.5s;
+  	animation-fill-mode: both;
+}
+.list-button {
+	cursor: pointer;
+	padding: 10px;
+	background-color: #00000000;
+	color: #000;
+	z-index: 9999;
+	height: 30px;
+}
+
+.list-button span {
+	margin-top: 2px;
+	display: block;
+	width: 20px;
+	height: 2px;
+	background-color: #000;
+	margin-bottom: 4px;
+	transition: transform 0.3s ease-out;
+}
+
+.list-button.open span:nth-child(1) {
+	transform: translateY(6px) rotate(-45deg);
+}
+
+.list-button.open span:nth-child(2) {
+	opacity: 0;
+}
+
+.list-button.open span:nth-child(3) {
+	transform: translateY(-6px) rotate(45deg);
+}
+.wid{
+	margin:0;
+	display:inline-block;
+	width:150px;
+	height:100%;
+	margin-top:12px;
+}
+.bt {
+	position: fixed;
+	right:15px;
+	top:15px;
+	float:right;
+	margin: 0;
+	padding: 0;
+	margin-bottom: -25px;
+}
+.wid > li{
+	padding: 10px 30px;
+	box-sizing:border-box;
+}
+
+#no{
+	opacity:0;
+	font-size:0px;
+}

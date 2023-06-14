@@ -21,13 +21,11 @@
         <link rel="stylesheet" href="/resources/css/all/scrollbar.css">
         <link rel="stylesheet" href="/resources/css/main/product/bestProduct.css">
         <link rel="stylesheet" href="/resources/css/main/report/report.css">
+        <link rel="stylesheet" href="/resources/css/all/nav.css">
     </head>
     <body>
         <div>
             <div class="bg-color">
-                <!-- <header>
-                    <h1>Header</h1>
-                </header> -->
                 <nav class="bg-color">                
                     <ul class="ul-lh">
                         <div>
@@ -38,40 +36,41 @@
                             </li>          
                         </div>
                         <div class="color">
-                            <ul>
-                              <li class="category">
+                        <ul>
+                            <li class="category">
                                 <p>구독하기</p>
-                                <ul class="cate">
-                                    <li><a href="/subscribe/event">이벤트</a></li>
-                                    <li><a href="/subscribe/subscribing">구독하기</a></li>
-                                    <li><a href="/subscribe/sub_info">구독체계</a></li>
-                                </ul>
-                                </li>
-                              <li class="category">
                                 <p>제품소개</p>
-                                <ul class="cate">
-                                    <li><a href="/product/newProduct">신상품</a></li>
-                                    <li><a href="/product/bestProduct">인기상품</a></li>
-                                    <li><a href="/product/process">유통과정</a></li>
-                                </ul>
+                                <p>게시판</p>
+                                <p>문의하기</p>
                             </li>
-                             <li class="category">
-                        <p>게시판</p>
-                        <ul class="cate">
-                           <li><a href="/notice/notification">공지사항</a></li>
-                           <li><a href="/notice/board">자유게시판</a></li>
-                           <li><a href="/notice/review">리뷰</a></li>
                         </ul>
-                     </li>
-                     <li class="category">
-                        <p>문의하기</p>
-                        <ul class="cate">
-                           <li><a href="/etc/FAQ">FAQ</a></li>
-                           <li><a href="/etc/1vs1">1대1 상담</a></li>
-                        </ul>
-                     </li>
-                          </div>
-                          
+                        <div class="size">
+							<div class="cate">
+								<div class="in">
+									<div class="wid">
+										<li><a href="/subscribe/event">이벤트</a></li>
+										<li><a href="/subscribe/subscribing">구독하기</a></li>
+										<li><a href="/subscribe/sub_info">구독체계</a></li>
+									</div>
+									<div class="wid">
+										<li><a href="/product/newProduct">신상품</a></li>
+										<li><a href="/product/bestProduct">인기상품</a></li>
+										<li><a href="/product/process">유통과정</a></li>
+									</div>
+									<div class="wid">
+										<li><a href="/notice/notification">공지사항</a></li>
+										<li><a href="/notice/board">자유게시판</a></li>
+										<li><a href="/notice/review">리뷰</a></li>
+									</div>
+									<div class="wid">
+										<li><a href="/etc/FAQ">FAQ</a></li>
+										<li><a href="/etc/1vs1">1대1 상담</a></li>
+										<li><a href="" id="no">.</a></li>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
                        <c:if test="${sessionScope.user.name == null}">
                   <div>
                      <li class="log"><a href="/login/loginPage" id="sign">로그인</a>
@@ -80,10 +79,21 @@
                </c:if>
                <c:if test="${sessionScope.user.name != null}">
                   <div>
-                     <li class="log"><a href="/login/logout" id="sign" class="log_out">로그아웃</a></li>
+                     	<li class="log">
+							<a href="/login/logout" id="out"
+							class="log_out">로그아웃</a>
+							<a href="/user/myPage" class="un">마이페이지</a>
+						</li>
                   </div>
                </c:if>
                     </ul>
+                    <div class="bt">
+					<div class="list-button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
                 </nav>
             </div>
             <div>
@@ -184,14 +194,6 @@
                            </div>
                         </div>
                     </div>
-                    <!-- <div class="slideshow">
-                        <button class="slide-btn prev">&#10094;</button>
-                        <button class="slide-btn next">&#10095;</button>
-                        <img src="/image/mainImage1.jpg" alt="image 1" class="slide">
-                        <img src="/image/num2.png" alt="image 2" class="slide">
-                        <img src="/image/num3.png" alt="image 3" class="slide">
-                        <img src="/image/num4.png" alt="image 4" class="slide">
-                    </div>                   -->
                 </section>
             </div>
             <div class="footer">
@@ -203,6 +205,6 @@
             </div>
         </div>
         <script src="/resources/js/main/top.js"></script>
+        <script src="/resources/js/all/nav.js"></script>
     </body>
-</html>
 </html>

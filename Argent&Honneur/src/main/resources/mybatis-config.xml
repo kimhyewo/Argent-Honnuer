@@ -7,9 +7,11 @@
 	</settings>
 	<typeAliases>
 		<typeAlias type="kr.ac.kopo.model.User" alias="User"/>
+		<typeAlias type="kr.ac.kopo.model.Subscription" alias="Subscription"/>
 	</typeAliases>
 	
 	<mappers>
 		<mapper resource="mybatis/user.xml"/>
+		<mapper resource="mybatis/subscription.xml"/>
 	</mappers>
 </configuration>

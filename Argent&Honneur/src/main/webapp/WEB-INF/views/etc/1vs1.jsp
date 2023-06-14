@@ -12,14 +12,24 @@
 <link rel="stylesheet" href="/resources/css/font/font.css">
 <link rel="stylesheet" href="/resources/css/mediaQuery/mediaQuery.css">
 <link rel="stylesheet" href="/resources/css/all/scrollbar.css">
+<link rel="stylesheet" href="/resources/css/etc/1vs1.css">
 </head>
 <body>
 	<!-- header -->
    		<%@ include file="../header/header_menu.jsp" %>
    		
-		<div>
+		<div class="section">
 			<section>
-			
+				<form action="">
+					<div>
+						<label>제목 : </label>
+						<input type="text">
+					</div>
+					<div>
+						<textarea rows="20" cols="20">
+						</textarea>
+					</div>
+				</form>
 			</section>
 		</div>
 </body>

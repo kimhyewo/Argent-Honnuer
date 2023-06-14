@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="subscription">
+
+	<insert id="subscribing">
+		INSERT INTO subscription
+		(userId, amount, startDate, endDate, cardNumber, expiryDate, cvv)
+		VALUES (#{userId}, #{amount}, SYSDATE(), DATE_ADD(SYSDATE(), INTERVAL 29 DAY), #{cardNumber}, #{expiryDate}, #{cvv})
+	</insert>
+	
+</mapper>

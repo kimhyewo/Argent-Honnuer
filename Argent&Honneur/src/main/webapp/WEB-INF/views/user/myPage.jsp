@@ -21,24 +21,27 @@
                 <div class="margin">
                     <div>
                         <h2>
-                            Login
+                            마이페이지
                         </h2>
                     </div>
                     <div>
-                        <label for="">User ID</label>
-                        <input type="text" class="mg-t" name="userid" id="userid" placeholder="아이디를 입력해 주세요." required>
+                        <label for="userid">User ID</label>
+                        <input type="text" class="mg-t" name="userid" id="userid" placeholder="아이디를 입력해 주세요." value="${item.userid}">
                     </div>
                     <div>
-                        <label for="">User Password</label>
-                        <input type="password" class="mg-t" name="userpwd" id="userpwd" placeholder="비밀번호를 입력해 주세요" required>
-                    </div>
+						<label for="i4">Name</label> <input type="text" id="i4"
+							class="mg-t" name="name" value="${item.name}">
+					</div>
+					<div>
+						<label for="i6">Age</label> <input type="date" id="i6"
+							class="mg-t" name="age" pattern="yyyy-mm-dd" value="${item.age}">
+					</div>
+					<div>
+						<label for="i7">Phone</label> <input type="tel" id="i7"
+							class="mg-t" name="phone" maxlength="11" minlength="11" value="${item.phone}">
+					</div>
                     <div>
-                        <button type="button" class="btn" onclick="login();">Login</button>
-                    </div>
-                    <hr>
-                    
-                    <div class="text">
-                        <p>계정이 없으신가요? <a href="signup.html" class="span">계정을 만드세요!</a></p>
+                        <button type="button" class="btn">변경</button>
                     </div>
                 </div>
             </div>
