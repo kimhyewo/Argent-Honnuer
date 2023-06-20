@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Argent&Honneur 관리자 페이지</title>
 </head>
 <body>
-	관리자페이지
+	<div>
+		<pre>관리자페이지 입니다</pre>
+	</div>
 </body>
 </html>

@@ -1,10 +1,11 @@
 package kr.ac.kopo.model;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-public class User {
+public class User  {
 	private String userid;
 	private String userpwd;
 	private String name;
