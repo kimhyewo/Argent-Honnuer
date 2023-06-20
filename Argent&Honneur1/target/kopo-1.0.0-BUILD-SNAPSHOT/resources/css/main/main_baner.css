@@ -1,0 +1,35 @@
+
+.header {
+	background-image: url(/resources/image/banner/blur-banner5.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    z-index: 1;
+    width: 100%;
+  	transition: 1s;
+    background-size:100% 600px;
+}
+.header .title {
+    text-align: center;
+}
+.header .title h1 {
+    font-size: 48px;
+    color: #ffa530;
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+   	text-shadow: 10px 10px 60px #000, -10px -10px 60px #000;   
+}
+.header .title p {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight:100;
+    color: #fff;
+    text-shadow: 7px 7px 20px #000, -7px -7px 20px #000;
+}
+
+.title{
+	text-shadow: 20px 20px 70px #000, -20px -20px 70px #000;
+}

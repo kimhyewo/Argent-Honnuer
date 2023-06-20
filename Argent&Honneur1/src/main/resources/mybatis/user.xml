@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="user">
+
+	<select id="login" resultType="User">
+		SELECT * FROM user
+		WHERE userid=#{userid} AND userpwd=UPPER(SHA1(UNHEX(SHA1(#{userpwd}))))
+	</select>
+	
+	<insert id="signup">
+		INSERT INTO user
+		VALUES (#{userid}, UPPER(SHA1(UNHEX(SHA1(#{userpwd})))), #{name}, #{gender}, #{age}, #{phone}, #{group})
+	</insert>
+	
+	<select id="checheckuser_id" resultType="Integer">
+		SELECT COUNT(*) FROM user
+		WHERE userid=#{userid}
+	</select>
+	
+	<select id="list" resultType="User">
+		SELECT * FROM user
+	</select>
+	
+	<select id="item" resultType="User">
+		SELECT U.* , SUM(S.amount) AS amount
+			
+			<!-- <if test="COUNT > 1">
+				SUM(S.amount)
+			</if>
+			<if test="COUNT lt 2">
+				S.amount
+			</if> -->
+
+		
+		FROM user U LEFT JOIN subscription S ON U.userid = S.userid 
+		WHERE U.userid=#{userid}
+		
+	</select>
+	
+	<update id="update">
+		UPDATE user
+		SET phone=#{phone}
+		WHERE userid=#{userid}
+	</update>
+	
+</mapper>

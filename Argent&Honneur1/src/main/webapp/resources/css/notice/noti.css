@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+.noti_wrap {
+   width: 1280px;
+   margin: 30px auto;
+}
+
+.noti_title {
+   margin-bottom: 30px;
+}
+
+.noti-title h1 {
+   font-size: 3em;
+}
+
+.noti-title p {
+   font-size: 1.4rem;
+   margin-top: 5px;
+}
+
+.nt_wrap {
+   margin-top: 30px;
+   text-align: center;
+   font-size: 0;
+}
+
+.nt_wrap a {
+   display: inline-block;
+   min-width: 80px;
+   margin-left: 15px;
+   padding: 10px;
+   border: 1px solid #000;
+   border-radius: 2px;
+   font-size: 13px;
+   color: #000;
+}
+
+.nt_wrap a:first-child {
+   margin-left: 0;
+}
+
+.nt_wrap a.on {
+   background: #000;
+   color: #fff;
+   margin-left: 1050px;
+}
+
+.noti_list {
+   width: 100%;
+   border-top: 2px solid #000;
+}
+
+.noti_list > div {
+   border-bottom: 1px solid #ddd;
+   font-size: 0;
+}
+
+.noti_list > div.gray {
+   background-color: #F5F5F5;
+}
+
+.noti_list > div.top {
+   border-bottom: 1px solid #999;
+}
+
+.noti_list > div:last-child {
+   border-bottom: 1px solid #000;
+}
+
+.noti_list > div > div {
+   display: inline-block;
+   text-align: center;
+   padding: 15px 0;
+   font-size: 17px;
+}
+
+.noti_list > div.top > div {
+   font-weight: 600;
+}
+
+.noti_list .num {
+   width: 10%;
+}
+
+.noti_list .title_1 {
+   width: 60%;
+   text-align: left;
+}
+
+.noti_list .top .title_1 {
+   text-align: center;
+}
+
+.noti_list .writer {
+   width: 10%;
+}
+
+.noti_list .date {
+   width: 10%;
+}
+
+.noti_list .count {
+   width: 10%;
+}
+
+.noti_page {
+   margin-top: 30px;
+   text-align: center;
+   color: black;
+   font-size: 0;
+}
+
+.noti_page a {
+   display: inline-block;
+   width: 32px;
+   height: 32px;
+   box-sizing: border-box;
+   border: 1px solid #ddd;
+   border-left: 0;
+   vertical-align: middle;
+   line-height: 100%;
+}
+
+.noti_page a.nt {
+   font-size: 13px;
+   padding-top: 9px;
+   letter-spacing: -1px;
+}
+
+.noti_page a.nt_num {
+   padding-top: 7px;
+   font-size: 15px;
+}
+
+.noti_page a.nt_num.on {
+   border-color: #000;
+   background: #000;
+   color: #fff;
+}
+
+.noti_page a:first-child {
+   border-left: 1px solid #ddd;
+}
+
+.noti_view {
+   width: 100%;
+   border-top: 2px solid #000;
+}
+
+.noti_view .title_2 {
+   padding: 20px 15px;
+   border-bottom: 1px dashed #ddd;
+   font-size: 22px;
+   font-weight: bold;
+}
+
+.noti_view .info_1 {
+   padding: 15px;
+   border-bottom: 1px solid #999;
+   font-size: 0;
+}
+
+.noti_view .info_1 dl {
+   position: relative;
+   display: inline-block;
+   padding: 0 20px;
+}
+
+.noti_view .info_1 dl:first-child {
+   padding-left: 0;
+}
+
+.noti_view .info_1 dl::before {
+   content: "";
+   position: absolute;
+   top: 2.5px;
+   left: 0;
+   width: 1px;
+   height: 13px;
+   background: #ddd;
+   display: block;
+}
+
+.noti_view .info_1 dl:first-child::before {
+   display: none;
+}
+
+.noti_view .info_1 dl dt,
+.noti_view .info_1 dl dd{
+   display: inline-block;
+   font-size: 15px;
+}
+
+.noti_view .info_1 dl dd {
+   margin-left: 10px;
+   color: #777;
+}
+
+.noti_view .cont_1 {
+   padding: 15px;
+   border-bottom: 1px solid #000;
+   line-height: 160%;
+}
+
+.noti_write {
+   width: 100%;
+   border-top: 2px solid #000;
+}
+
+.noti_write .title_3,
+.noti_write .info_2 {
+   padding: 15px;
+}
+
+.noti_write .info_2 {
+   border-top: 1px dashed #ddd;
+   border-bottom: 1px solid #000;
+   font-size: 0;
+}
+
+.noti_write .title_3 dl {
+   font-size: 0;
+}
+
+.noti_write .info_2 dl {
+   display: inline-block;
+   width: 50%;
+   vertical-align: middle;
+}
+
+.noti_write .title_3 dt,
+.noti_write .title_3 dd,
+.noti_write .info_2 dt,
+.noti_write .info_2 dd {
+   display: inline-block;
+   vertical-align: middle;
+   font-size: 16px;
+}
+
+.noti_write .title_3 dt,
+.noti_write .info_2 dt {
+   width: 100px;
+}
+
+.noti_write .title_3 dd {
+   width: calc(100% - 100px);
+}
+
+.noti_write .title_3 input[type="text"] {
+   width: 80%;
+}
+
+.noti_write .cont_2 {
+   border-bottom: 1px solid #000;
+}
+
+.noti_write .cont_2 textarea {
+   display: block;
+   width: 100%;
+   height: 300px;
+   padding: 15px;
+   box-sizing: border-box;
+   border: 0;
+   resize: vertical;
+}

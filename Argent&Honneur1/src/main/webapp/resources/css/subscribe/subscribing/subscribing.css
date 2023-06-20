@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#header{
+    background-image: url(/resources/image/subscribe/subscribing/subsPage.jpg);
+    background-position: center;
+    background-size:cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    z-index: 1;
+    width: 100%;
+    transition: 1s;
+    background-size:100% 600px;
+}
+

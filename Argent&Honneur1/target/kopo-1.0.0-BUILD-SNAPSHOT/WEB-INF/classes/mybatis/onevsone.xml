@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="onevsone">
+	
+	<select id="list" resultType="OneVsOne">
+	
+		SELECT onevsone.id, onevsone.title, onevsone.userid, user.name , user.group
+		FROM onevsone JOIN user ON onevsone.userid = user.userid
+		<if test="user.group == 0 or user.group == null">
+			WHERE user.userid=#{userid}
+		</if>
+		ORDER BY onevsone.id
+	
+		<!-- LIMIT #{offset}, #{perPage}  -->
+		
+		<!-- SELECT onevsone.id, onevsone.title, onevsone.userid
+		FROM onevsone
+		WHERE onevsone.userid=#{userid} -->
+		
+	</select>
+	
+	
+	
+	<resultMap type="OneVsOne" id="OneVsOneMap" autoMapping="true">
+		<id column="id" property="id"/>
+		<!-- <id column="userid" property="userid"/> -->
+	</resultMap>
+	
+	<select id="item" resultMap="OneVsOneMap">
+		SELECT title, contents
+		FROM onevsone 
+		WHERE id=#{id}
+	</select>
+	
+	<update id="update" parameterType="OneVsOne" keyColumn="id" keyProperty="id">
+		UPDATE onevsone
+		SET title=#{title}, contents=#{contents}
+		WHERE id=#{id} AND userid=#{userid}
+	</update>
+	
+	<insert id="add">
+		INSERT INTO onevsone
+		(userid, title, contents)
+		VALUES (#{userid}, #{title}, #{contents})
+	</insert>
+	
+	<delete id="delete">
+		DELETE FROM onevsone
+		WHERE id=#{id}
+	</delete>
+	
+	<select id="total" resultType="Integer">
+		SELECT COUNT(*) 
+		FROM (SELECT * FROM onevsone) T1
+	</select>
+		
+	
+</mapper>
